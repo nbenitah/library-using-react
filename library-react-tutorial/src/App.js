@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
+import Nav from './components/Nav';
 function App() {
   return (
     <div className="App">
+      <h1>
+        <FontAwesomeIcon icon={faBook} /> Library React Tutorial
+      </h1>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
