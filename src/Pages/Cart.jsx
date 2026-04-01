@@ -111,6 +111,7 @@ const Cart = () => {
             <h2 className="section__title">Shopping Cart</h2>
 
             <div
+              className="cart__layout"
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'minmax(0, 1fr) 320px',
@@ -120,6 +121,7 @@ const Cart = () => {
             >
               <div>
                 <div
+                  className="cart__row--header"
                   style={{
                     display: 'grid',
                     gridTemplateColumns: '80px 1fr 96px 90px auto',
@@ -139,6 +141,7 @@ const Cart = () => {
                 {items.map((item) => (
                   <div
                     key={item.id}
+                    className="cart__row--item"
                     style={{
                       display: 'grid',
                       gridTemplateColumns: '80px 1fr 96px 90px auto',
@@ -183,6 +186,7 @@ const Cart = () => {
               </div>
 
               <aside
+                className="cart__summary-aside"
                 style={{
                   border: '1px solid #d6d6d6',
                   borderRadius: '8px',

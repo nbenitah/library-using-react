@@ -801,6 +801,27 @@ select {
   .book__selected--description {
     width: 100%;
   }
+
+  /* Books filter header */
+  .books__header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  select {
+    max-width: 100%;
+  }
+
+  /* Cart outer layout */
+  .cart__layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cart__summary-aside {
+    position: static !important;
+    top: 0 !important;
+  }
 }
 
 
@@ -827,5 +848,90 @@ select {
   }
   .cart__book--info {
     padding-left: 0;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  /* Landing page */
+  header {
+    height: auto;
+    min-height: calc(100vh - 80px);
+    padding-bottom: 32px;
+  }
+
+  .header__img--wrapper {
+    max-height: 32vh;
+  }
+
+  /* Books filter header */
+  .books__header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  select {
+    max-width: 100%;
+  }
+
+  /* Book info back link */
+  .book__selected--top {
+    padding: 0 8px;
+  }
+
+  /* Cart item rows on mobile */
+  .cart__row--header {
+    display: none !important;
+  }
+
+  .cart__row--item {
+    grid-template-columns: 70px 1fr !important;
+    row-gap: 8px !important;
+  }
+
+  .cart__row--item > :nth-child(1) {
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+
+  .cart__row--item > :nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .cart__row--item > :nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .cart__row--item > :nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    justify-self: start !important;
+    text-align: left !important;
+  }
+
+  .cart__row--item > :nth-child(5) {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+
+  /* Footer links */
+  .footer__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
   }
 }
